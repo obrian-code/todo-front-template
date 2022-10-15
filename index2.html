@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      main {
+        width: 30%;
+        padding: 5%;
+        background-color: var(--color-Secundary);
+      }
+      .header-controllers {
+        width: 100%;
+        display: flex;
+        /* background-color: tomato; */
+        justify-content: center;
+        align-items: center;
+      }
+      .header-controllers_signUp,
+      .header-controllers_logIn {
+        cursor: pointer;
+        width: 35%;
+        line-height: 2;
+        padding: 0.5%;
+        text-align: center;
+      }
+      .header-controllers_active {
+        background: var(--color-Primary);
+        color: var(--color-Secundary);
+      }
+      .title {
+        color: var(--color-text);
+        font-size: 1.5rem;
+        text-align: center;
+        /* background-color: blueviolet; */
+        line-height: 3;
+        width: 100%;
+      }
+      .container-form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .header-input {
+        width: 100%;
+        color: var(--color-text);
+        border-bottom: 2px solid var(--color-text);
+        caret-color: var(--color-text);
+        color: var(--color-text);
+      }
+      .container-form .container-form-btn {
+        margin-top: 5%;
+        border: none;
+        width: 35%;
+        background: var(--color-Primary);
+        padding: 5%;
+
+        border-radius: 50px;
+        text-align: center;
+        color: var(--color-Secundary);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="header-controllers">
+        <span class="header-controllers_signUp header-controllers_active"
+          >Sign Up</span
+        >
+        <span class="header-controllers_logIn">Log In</span>
+      </div>
+      <div class="title">Sing Up</div>
+      <form action="" class="container-form">
+        <input type="text" name="" class="header-input" placeholder="Nombre*" />
+        <input type="text" name="" class="header-input" placeholder="Email*" />
+        <input
+          type="password"
+          name=""
+          class="header-input"
+          placeholder="Contraseña*"
+        />
+        <input
+          type="password"
+          name=""
+          class="header-input"
+          placeholder="Contraseña*"
+        />
+        <!-- <br> -->
+        <input type="submit" value="Get Started" class="container-form-btn" />
+      </form>
+    </main>
+  </body>
+</html>
